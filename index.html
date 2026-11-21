@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Valley Farm</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f7f7f2;
+        }
+
+        header {
+            background: #2f6b3b;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .hero {
+            min-height: 500px;
+            background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)),
+                url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1600&q=80")
+                center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 30px;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+        }
+
+        .section {
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        .section h2 {
+            color: #2f6b3b;
+            margin-bottom: 15px;
+            font-size: 32px;
+        }
+
+        .about {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,.1);
+        }
+
+        .card h3 {
+            color: #2f6b3b;
+            margin-bottom: 10px;
+        }
+
+        .contact {
+            background: #e7efe4;
+        }
+
+        footer {
+            background: #234d2b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero h2 {
+                font-size: 36px;
+            }
+
+            .gallery,
+            .products {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🌱 Green Valley Farm</h1>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#gallery">Farm</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div>
+        <h2>Fresh From Our Farm</h2>
+        <p>Growing healthy food naturally and sustainably.</p>
+    </div>
+</section>
+
+<section class="section" id="about">
+    <div class="about">
+        <h2>About Our Farm</h2>
+        <p>
+            Welcome to Green Valley Farm. We grow fresh vegetables,
+            fruits and other farm products using sustainable farming
+            practices. Our goal is to provide fresh, healthy and
+            quality food for our community.
+        </p>
+    </div>
+</section>
+
+<section class="section" id="gallery">
+    <h2>Life On The Farm</h2>
+
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=800&q=80"
+             alt="Green farm field">
+
+        <img src="https://images.unsplash.com/photo-1500076656116-558758c991c1?auto=format&fit=crop&w=800&q=80"
+             alt="Farm landscape">
+
+        <img src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=800&q=80"
+             alt="Fresh vegetables">
+    </div>
+</section>
+
+<section class="section" id="products">
+    <h2>Our Products</h2>
+
+    <div class="products">
+
+        <div class="card">
+            <h3>🥬 Fresh Vegetables</h3>
+            <p>
+                Freshly harvested vegetables grown with care on our farm.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🍅 Organic Produce</h3>
+            <p>
+                Healthy and natural produce for your family and business.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🥚 Farm Eggs</h3>
+            <p>
+                Fresh farm eggs collected and delivered regularly.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="section contact" id="contact">
+    <h2>Contact Us</h2>
+
+    <p>Email: Coming Soon</p>
+    <p>Phone: Coming Soon</p>
+    <p>Location: California</p>
+</section>
+
+<footer>
+    <p>© 2026 Green Valley Farm. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
